@@ -3,10 +3,12 @@ import uiRouter from '@uirouter/angularjs';
 import appRouter from './app.states';
 
 import layout from './modules/layout';
-import home from './modules/home';
 import contact from './modules/contact';
+import home from './modules/home';
 import estatePlanning from './modules/estate-planning';
 import probate from './modules/probate';
+import trustAdmin from './modules/trust-admin';
+import blog from './modules/blog';
 
 angular
   .module('rqhlaw', [
@@ -15,6 +17,8 @@ angular
     home,
     estatePlanning,
     probate,
+    trustAdmin,
+    blog,
     contact
   ])
   .config(appRouter);
