@@ -9,6 +9,7 @@ import estatePlanning from './modules/estate-planning';
 import probate from './modules/probate';
 import trustAdmin from './modules/trust-admin';
 import blog from './modules/blog';
+import about from './modules/about';
 
 angular
   .module('rqhlaw', [
@@ -19,6 +20,7 @@ angular
     probate,
     trustAdmin,
     blog,
-    contact
+    contact,
+    about
   ])
   .config(appRouter);
