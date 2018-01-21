@@ -13,7 +13,7 @@ const config = {
     app: './app.js' // point to enter the app
   },
   output: {
-    path: path.resolve(__dirname, 'dist'), // output dir as an abs path
+    path: path.resolve(__dirname, ''), // output dir as an abs path
     filename: '[name].bundle.js'           // name of output bundle
   },
   resolve: {
