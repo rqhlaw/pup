@@ -3,7 +3,7 @@
 .pre-footer {
   background-color: $color-b3;
   color: rgba($color-w1, .7);
-  height: 138px;
+  grid-area: prefooter;
   text-align: center;
 
   .contacts {
@@ -29,17 +29,11 @@
   }
 }
 
-#main-footer,
-.footer-inner,
-.site-info {
-  display: grid;
-}
-
 #main-footer {
   background-color: $color-b2;
   color: rgba($color-w1, .8);
+  grid-area: footer;
   grid-template-columns: auto;
-  height: 369px;
 
   .footer-inner {
     height: 100%;
