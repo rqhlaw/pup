@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
 import { states } from './layout.states';
+import './layout.scss';
 import './header.scss';
 import './footer.scss';
 
