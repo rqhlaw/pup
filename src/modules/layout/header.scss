@@ -1,4 +1,4 @@
-@import "~styles/variables";
+@import '~styles/variables';
 
 #main-header,
 #logo,
@@ -7,8 +7,8 @@
 }
 
 #main-header {
-  color: white;
-  grid-template-areas: "logo headernav";
+  color: $color-w1;
+  grid-template-areas: 'logo headernav';
   grid-template-columns: 500px auto;
   grid-template-rows: 100px;
   height: 140px;
@@ -46,7 +46,7 @@
 
 // Navigation Links
 #header-nav {
-  color: rgba(#fff, .9);
+  color: rgba($color-w1, .9);
   font-size: 13px;
   grid-area: headernav;
   padding: 28.5px;
@@ -65,18 +65,18 @@
     padding: 14px 0;
 
     &:hover {
-      color: white;
+      color: $color-w1;
     }
   }
 
   &:last-child a {
-    border: 2px solid white;
+    border: 2px solid $color-w1;
     border-radius: 300px;
     padding: 10px;
 
     &:hover {
-      background-color: white;
-      color: black;
+      background-color: $color-w1;
+      color: $color-b1;
     }
   }
 }
