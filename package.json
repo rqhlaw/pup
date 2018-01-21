@@ -2,6 +2,7 @@
   "name": "rqhlaw",
   "version": "1.0.0",
   "description": "Richard Q. Huynh Law Home Page",
+  "homepage": "https://github.com/Conanza/pup",
   "repository": "git@github.com:Conanza/pup.git",
   "license": "UNLICENSED",
   "private": true,
