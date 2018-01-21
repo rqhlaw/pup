@@ -1,4 +1,3 @@
-// placeholder
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
 import appRouter from './app.states';
