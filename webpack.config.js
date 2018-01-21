@@ -14,7 +14,8 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, ''), // output dir as an abs path
-    filename: '[name].bundle.js'           // name of output bundle
+    filename: '[name].bundle.js',      // name of output bundle
+    publicPath: '/pup/'
   },
   resolve: {
     alias: {
@@ -85,6 +86,7 @@ const config = {
     inline: true,                  // takes care of live reloading, build messages appear in console (recommended for HMR)
     open: true,                    // open in default browser
     port: 8585,
+    publicPath: '/pup/',
     // watchContentBase: true,
     watchOptions: {
       ignored: /node_modules/
