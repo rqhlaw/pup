@@ -1,0 +1,82 @@
+@import "~styles/variables";
+
+#main-header,
+#logo,
+.nav-links {
+  display: grid;
+}
+
+#main-header {
+  color: white;
+  grid-template-areas: "logo headernav";
+  grid-template-columns: 500px auto;
+  grid-template-rows: 100px;
+  height: 140px;
+  padding: 20px;
+}
+
+// "Logo"
+#logo {
+  grid-area: logo;
+}
+
+.logo-wrapper {
+  border: 2px solid;
+  border-radius: 24px;
+  height: 100px;
+  margin-left: 5px;
+  width: 300px;
+}
+
+.logo-text,
+.logo-subtext {
+  text-align: center;
+}
+
+.logo-text {
+  font-size: 36px;
+  line-height: 50px;
+  padding-top: 10px;
+}
+
+.logo-subtext {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+// Navigation Links
+#header-nav {
+  color: rgba(#fff, .9);
+  font-size: 13px;
+  grid-area: headernav;
+  padding: 28.5px;
+}
+
+.nav-links {
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: auto;
+  line-height: 43px;
+}
+
+.nav-link-item {
+  justify-self: end;
+
+  a {
+    padding: 14px 0;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:last-child a {
+    border: 2px solid white;
+    border-radius: 300px;
+    padding: 10px;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
