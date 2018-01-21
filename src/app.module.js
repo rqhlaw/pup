@@ -5,11 +5,13 @@ import appRouter from './app.states';
 
 import layout from './modules/layout';
 import home from './modules/home';
+import about from './modules/about';
 
 angular
   .module('rqhlaw', [
     uiRouter,
     layout,
-    home
+    home,
+    about
   ])
   .config(appRouter);
