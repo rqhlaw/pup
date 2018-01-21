@@ -62,7 +62,7 @@ const config = {
       hash: true,                          // append unique hash to included scripts and css files, useful for cache busting
       minify: false
     }),
-    new BaseHrefWebpackPlugin({ baseHref: '/' }), // inserts base href tag in head block
+    new BaseHrefWebpackPlugin({ baseHref: '/pup/' }), // inserts base href tag in head block
     new webpack.HotModuleReplacementPlugin() // exchange, add, or remove modules while app is running, without full reload
   ],
   watchOptions: {
