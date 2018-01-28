@@ -37,8 +37,9 @@
     "node": ">=5.10.0"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
     "postinstall": "webpack --config webpack.config.js",
-    "serve": "webpack-dev-server --config webpack.config.js --color --progress"
+    "serve": "webpack-dev-server --config webpack.dev.js --color --progress"
   }
 }
