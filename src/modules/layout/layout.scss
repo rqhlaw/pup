@@ -1,0 +1,39 @@
+@import '~styles/variables';
+
+.app-container,
+#main-header,
+#logo,
+.nav-links,
+#main-section,
+#main-footer,
+.footer-inner,
+.site-info {
+  display: grid;
+}
+
+.app-container {
+  grid-template-areas:
+    'header'
+    'main-section'
+    'prefooter'
+    'footer';
+  grid-template-columns: auto;
+  grid-template-rows: 140px auto 138px 369px;
+}
+
+#main-section {
+  background-color: $color-w1;
+  grid: {
+    area: main-section;
+    template-areas: '. content .';
+    template-columns: auto 1020px auto;
+    template-rows: auto;
+  }
+  min-height: calc(100vh - 647px);
+}
+
+.main-content {
+  grid-area: content;
+  padding: 96px 32px;
+  text-align: center;
+}
