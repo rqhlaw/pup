@@ -31,15 +31,16 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.0",
     "webpack": "^3.9.1",
-    "webpack-dev-server": "^2.9.5"
+    "webpack-dev-server": "^2.9.5",
+    "webpack-merge": "^4.1.1"
   },
   "engines": {
     "node": ">=5.10.0"
   },
   "scripts": {
+    "build": "webpack --config webpack.prod.js",
     "build:dev": "webpack --config webpack.dev.js",
-    "build:prod": "webpack --config webpack.prod.js",
-    "postinstall": "webpack --config webpack.config.js",
+    "postinstall": "npm run build",
     "serve": "webpack-dev-server --config webpack.dev.js --color --progress"
   }
 }

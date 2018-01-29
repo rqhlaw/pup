@@ -1,19 +1,20 @@
+// Core
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
+// Startup
 import appRouter from './app.states';
+// Features
+import layout from 'modules/layout';
+import home from 'modules/home';
+import estatePlanning from 'modules/estate-planning';
+import probate from 'modules/probate';
+import trustAdmin from 'modules/trust-admin';
+import blog from 'modules/blog';
+import taxPlanning from 'modules/tax-planning';
+import about from 'modules/about';
+import contact from 'modules/contact';
 
-import layout from './modules/layout';
-import home from './modules/home';
-import estatePlanning from './modules/estate-planning';
-import probate from './modules/probate';
-import trustAdmin from './modules/trust-admin';
-import blog from './modules/blog';
-import taxPlanning from './modules/tax-planning';
-import about from './modules/about';
-import contact from './modules/contact';
-
-angular
-  .module('rqhlaw', [
+export default angular.module('rqhlaw', [
     uiRouter,
     layout,
     home,
@@ -25,4 +26,5 @@ angular
     about,
     contact
   ])
-  .config(appRouter);
+  .config(appRouter)
+  .name;
