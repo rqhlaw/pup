@@ -25,11 +25,44 @@
   background-color: $color-w1;
   grid: {
     area: main-section;
-    template-areas: '. content .';
+    template-areas:
+      'banner banner banner'
+      '. content .';
     template-columns: auto 1020px auto;
-    template-rows: auto;
+    template-rows: 507px auto;
   }
-  min-height: calc(100vh - 647px);
+  margin-top: -140px;
+  min-height: calc(100vh - 507px);
+  z-index: -1;
+}
+
+.banner,
+.banner-title,
+.banner-overlay {
+  grid-area: banner;
+}
+
+.banner {
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+.banner-title {
+  align-self: center;
+  color: $color-w1;
+  font-size: 68px;
+  font-weight: 700;
+  justify-self: center;
+  z-index: 2;
+}
+
+.banner-overlay {
+  background-color: $color-b1;
+  opacity: .2;
+  z-index: 1;
 }
 
 .main-content {
