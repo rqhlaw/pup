@@ -1,0 +1,19 @@
+@import '~styles/variables';
+
+.banner.estate-planning {
+  background-image: url('~images/estate-planning-banner.jpg');
+}
+
+.summary {
+  margin-bottom: 60px;
+}
+
+.blurb {
+  p {
+    text-align: left;
+
+    &:first-child {
+      font-size: 22px;
+    }
+  }
+}

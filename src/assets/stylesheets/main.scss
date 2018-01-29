@@ -48,3 +48,12 @@ button {
 .display-none {
   display: none;
 }
+
+.link {
+  color: $color-cta1;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba($color-b1, .7);
+  }
+}
